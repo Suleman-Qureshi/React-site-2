@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Outlet } from 'react-router-dom';
+import MobileMeun from './component/MobileMeun';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <MobileMeun/>
+    <div className='mainImage w-screen h-screen overflow-hidden flex justify-center items-center flex-col'>
+    <span className='text-white text-sm tracking-widest absolute right-1 bottom-1'><p>Develped & Designed By <b className='text-green-500'>DesignSpecturm</b></p></span>
+    <Outlet/>
     </div>
+    </>
   );
 }
-
 export default App;
