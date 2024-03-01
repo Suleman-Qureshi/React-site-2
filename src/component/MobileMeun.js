@@ -25,17 +25,17 @@ function MobileMeun() {
       >
         <i
           id="ham_burger"
-          className="fa-solid fa-bars text-3xl max-lg:text-7xl text-green-500 p-3 bgTransparentBlack rounded-2xl cursor-pointer"
+          className="fa-solid fa-bars text-3xl text-green-500 p-3 bgTransparentBlack rounded-2xl cursor-pointer"
         ></i>
       </span>
       <div
         className={`{${
           click
             ? "fixed hidden top-16 w-screen py-4 px-2 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 rounded-xl "
-            : "fixed top-16 mt-20 left-0 w-screen py-4 px-2 ml-14 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 animate__animated animate__bounceInLeft rounded-xl "
+            : "fixed top-16 w-screen py-4 px-2 mt-20 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 animate__animated animate__bounceInLeft rounded-xl "
         }}`}
       >
-        <ul className="flex flex-col justify-center text-left space-y-12 ml-2 text-2xl">
+        <ul className="flex flex-col justify-center text-left space-y-6 ml-3">
           <NavLink
             onClick={handle_click}
             to="/"
