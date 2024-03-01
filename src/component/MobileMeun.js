@@ -18,10 +18,10 @@ setInterval(()=>{
     return (
 <>
     <span className='hidden max-lg:flex z-30 absolute top-0 right-0' onClick={handle_click}>
-    <i id='ham_burger' className="fa-solid fa-bars fa-2x text-green-500 p-3 bgTransparentBlack rounded-2xl cursor-pointer"></i>
+    <i id='ham_burger' className="fa-solid fa-bars text-3xl max-lg:text-7xl text-green-500 p-3 bgTransparentBlack rounded-2xl cursor-pointer"></i>
     </span>
-    <div className={`{${click?"fixed hidden top-16 w-screen py-4 px-2 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 rounded-xl ":"fixed top-16 left-0 w-screen py-4 px-2 mx-2 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 animate__animated animate__bounceInLeft rounded-xl "}}`}>
-    <ul className='flex flex-col justify-center text-left space-y-6'>         
+    <div className={`{${click?"fixed hidden top-16 w-screen py-4 px-2 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 rounded-xl ":"fixed top-16 mt-20 left-0 w-screen py-4 px-2 ml-14 bg-black bg-opacity-50 border-2 border-green-500 border-opacity-30 z-40 animate__animated animate__bounceInLeft rounded-xl "}}`}>
+    <ul className='flex flex-col justify-center text-left space-y-12 ml-2 text-2xl'>         
 <NavLink onClick={handle_click} to='/' className={({isActive})=>`hover:text-green-500 duration-150 ${isActive?"text-green-500  before:w-2/5":" text-neutral-300 before:w-0 "} cursor-pointer relative hover:before:w-2/5 before:bg-green-500 before:-bottom-2 hover:no-underline`}>Home</NavLink>
 <NavLink onClick={handle_click} to='/about' className={({isActive})=>`hover:text-green-500 duration-150 ${isActive?"text-green-500  before:w-2/5":" text-neutral-300 before:w-0 "} cursor-pointer relative hover:before:w-2/5 before:bg-green-500 before:-bottom-2 hover:no-underline`}>About</NavLink>
 <NavLink onClick={handle_click} to='/Resume' className={({isActive})=>`hover:text-green-500 duration-150 ${isActive?"text-green-500  before:w-2/5":" text-neutral-300 before:w-0 "} cursor-pointer relative hover:before:w-2/5 before:bg-green-500 before:-bottom-2 hover:no-underline`}>Resume</NavLink>
